@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verificação de Serviços</title>
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card.green {
+      border-color: green;
+    }
+
+    .card .title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .card .field {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Verificação de Serviços</h1>
+
+
+  <div class="container-input">
+    <input id="endpoint" class="input" type="text" required placeholder="Endpoint">
+    <input id="fields" class="input" type="text"  required placeholder="Campos (separados por vírgula)">
+    <input id="fieldValues" class="input" type="text"  required placeholder="valores dos campos (separados por vírgula)">
+  </div>
+
+  <div>
+    <button type="submit">submit</button>
+  </div>
+  
+  <!-- <form id="serviceForm">
+    <label for="endpoint">Endpoint:</label>
+    <input type="text" id="endpoint" required>
+
+    <label for="fields">Campos (separados por vírgula):</label>
+    <input type="text" id="fields" required>
+
+    <button type="submit">Verificar</button>
+  </form> -->
+
+  <div id="cardsContainer"></div>
+
+  <script src="/main.js"></script>
+</body>
+</html>
